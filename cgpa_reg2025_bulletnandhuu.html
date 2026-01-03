@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CGPA Calculator – Reg 2025 | BulletNandhuu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+    padding:15px;
+}
+.container{
+    max-width:750px;
+    margin:auto;
+    background:#fff;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+h1{
+    text-align:center;
+    color:#1e88e5;
+}
+.subtitle{
+    text-align:center;
+    font-size:14px;
+    color:gray;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+th,td{
+    border:1px solid #ccc;
+    padding:6px;
+    text-align:center;
+    font-size:14px;
+}
+th{
+    background:#e3f2fd;
+}
+input,select{
+    width:100%;
+    padding:5px;
+}
+button{
+    width:100%;
+    margin-top:15px;
+    padding:10px;
+    background:#1e88e5;
+    color:white;
+    border:none;
+    font-size:16px;
+    border-radius:6px;
+}
+.result{
+    margin-top:15px;
+    font-size:18px;
+    text-align:center;
+    font-weight:bold;
+}
+.footer{
+    text-align:center;
+    margin-top:20px;
+    font-size:12px;
+    color:#666;
+    padding-top:10px;
+    border-top:1px solid #ccc;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h1>CGPA Calculator</h1>
+<div class="subtitle">
+Anna University – Regulation 2025 (Semester I)<br>
+by <b>BulletNandhuu</b>
+</div>
+
+<table>
+<tr>
+    <th>Subject Name</th>
+    <th>Credits</th>
+    <th>Grade</th>
+</tr>
+
+<tr><td>Applied Calculus</td><td><input type="number" value="4" id="c1"></td>
+<td><select id="g1"><option value="">--</option><option value="10">S</option><option value="9">A+</option><option value="8">A</option><option value="7">B+</option><option value="6">B</option><option value="5">C+</option><option value="4">C</option><option value="0">U</option></select></td></tr>
+
+<tr><td>English Essentials – I</td><td><input type="number" value="2" id="c2"></td>
+<td><select id="g2"><option value="">--</option><option value="10">S</option><option value="9">A+</option><option value="8">A</option><option value="7">B+</option><option value="6">B</option><option value="5">C+</option><option value="4">C</option><option value="0">U</option></select></td></tr>
+
+<tr><td>Heritage of Tamils</td><td><input type="number" value="1" id="c3"></td>
+<td><select id="g3"><option value="">--</option><option value="10">S</option><option value="9">A+</option><option value="8">A</option><option value="7">B+</option><option value="6">B</option><option value="5">C+</option><option value="4">C</option><option value="0">U</option></select></td></tr>
+
+<tr><td>Applied Physics – I</td><td><input type="number" value="3" id="c4"></td>
+<td><select id="g4"><option value="">--</option><option value="10">S</option><option value="9">A+</option><option value="8">A</option><option value="7">B+</option><option value="6">B</option><option value="5">C+</option><option value="4">C</option><option value="0">U</option></select></td></tr>
+
+<tr><td>Applied Chemistry – I</td><td><input type="number" value="3" id="c5"></td>
+<td><select id="g5"><option value="">--</option><option value="10">S</option><option value="9">A+</option><option value="8">A</option><option value="7">B+</option><option value="6">B</option><option value="5">C+</option><option value="4">C</option><option value="0">U</option></select></td></tr>
+
+<tr><td>Computer Programming: C</td><td><input type="number" value="3" id="c6"></td>
+<td><select id="g6"><option value="">--</option><option value="10">S</option><option value="9">A+</option><option value="8">A</option><option value="7">B+</option><option value="6">B</option><option value="5">C+</option><option value="4">C</option><option value="0">U</option></select></td></tr>
+
+<tr><td>Essentials of Computing</td><td><input type="number" value="3" id="c7"></td>
+<td><select id="g7"><option value="">--</option><option value="10">S</option><option value="9">A+</option><option value="8">A</option><option value="7">B+</option><option value="6">B</option><option value="5">C+</option><option value="4">C</option><option value="0">U</option></select></td></tr>
+
+<tr><td>Makerspace</td><td><input type="number" value="2" id="c8"></td>
+<td><select id="g8"><option value="">--</option><option value="10">S</option><option value="9">A+</option><option value="8">A</option><option value="7">B+</option><option value="6">B</option><option value="5">C+</option><option value="4">C</option><option value="0">U</option></select></td></tr>
+
+<tr><td>Life Skills for Engineers – I</td><td><input type="number" value="1" id="c9"></td>
+<td><select id="g9"><option value="">--</option><option value="10">S</option><option value="9">A+</option><option value="8">A</option><option value="7">B+</option><option value="6">B</option><option value="5">C+</option><option value="4">C</option><option value="0">U</option></select></td></tr>
+
+<tr><td>Physical Education – I</td><td><input type="number" value="1" id="c10"></td>
+<td><select id="g10"><option value="">--</option><option value="10">S</option><option value="9">A+</option><option value="8">A</option><option value="7">B+</option><option value="6">B</option><option value="5">C+</option><option value="4">C</option><option value="0">U</option></select></td></tr>
+
+</table>
+
+<button onclick="calculateCGPA()">Calculate CGPA</button>
+<div class="result" id="output"></div>
+
+<!-- METHOD 3 : COPYRIGHT / LEGAL WARNING -->
+<div class="footer">
+© 2026 <b>BulletNandhuu</b><br>
+This CGPA Calculator is exclusively developed for the BulletNandhuu YouTube Channel.<br>
+Unauthorized copying, modification, or redistribution of this code or website is strictly prohibited.<br>
+Legal action may be taken under applicable copyright laws.
+</div>
+
+</div>
+
+<script>
+function calculateCGPA(){
+let totalCredits = 0;
+let totalPoints = 0;
+
+for(let i=1;i<=10;i++){
+    let c = Number(document.getElementById("c"+i).value);
+    let g = Number(document.getElementById("g"+i).value);
+    totalCredits += c;
+    totalPoints += c*g;
+}
+let cgpa = (totalPoints / totalCredits).toFixed(2);
+document.getElementById("output").innerHTML =
+"✅ Your CGPA: <span style='color:#1e88e5'>" + cgpa + "</span>";
+}
+</script>
+
+</body>
+</html>
